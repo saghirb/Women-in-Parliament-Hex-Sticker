@@ -7,12 +7,12 @@ or any other data analysis software.
 
 ## Women in Parliament Hex Sticker:
 
-[![Women in Parliament Hex Sticker](images/Women_in_Parliament_hex.svg)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.svg)
+[![Women in Parliament Hex Sticker](images/Women_in_Parliament_hex.png)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png)
 
 
 ### Bonus Image
 
-[![Women in Parliament Image](images/Women_in_Parliament_rect.svg)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.svg)
+[![Women in Parliament Image](images/Women_in_Parliament_rect.svg)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png)
 
 ---
 
