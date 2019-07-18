@@ -51,7 +51,8 @@ the actual numbers used to calculate the percentages (which the World Bank does 
 
 ## Acknowledgements
 
-The images were create by Marina Costa guided by [Andreia Carlos](https://github.com/agrou) and myself. 
+The images were create by [Marina Costa](https://cargocollective.com/marinacostaportfolio) 
+guided by [Andreia Carlos](https://github.com/agrou) and myself. 
 
 You can view Marina's great portfolio at:
 
