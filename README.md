@@ -7,15 +7,16 @@ or any other data analysis software.**
 
 ## Women in Parliament Hex Sticker:
 
-Download: [PNG (754x873)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png) or 
-[SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_hex.svg).
+<img src="images/Women_in_Parliament_hex.svg" alt="Women in Parliament Hex Sticker" width="400"> 
 
-<img src="images/Women_in_Parliament_hex.svg" alt="Women in Parliament Hex Sticker" width="400"> **Download:** [PNG (754x873)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png) or 
+**Download:** [PNG (754x873)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png) or 
 [SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_hex.svg).
 
 ### Bonus Image
 
-<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="400"> **Download:** [PNG (3508x2480)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
+<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="400"> 
+
+**Download:** [PNG (3508x2480)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
 [SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_rect.svg).
 
 ---
