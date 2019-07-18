@@ -17,7 +17,7 @@ Download [PNG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/ma
 Download [PNG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
 [SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_rect.svg).
 
-<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="600">
+<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="400">
 
 ---
 
