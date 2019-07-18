@@ -1,21 +1,23 @@
 # Women in Parliament Hex Sticker (& Data)
 
-Use the _*World Bank's Women in Parliament Data*_ to teach [R](https://r-project.org) 
-or any other data analysis software. 
+**Use the World Bank's "Women in Parliament Data" to teach [R](https://r-project.org) 
+or any other data analysis software.**
 
-*We even created a hex sticker for you use!*
+**We even created a hex sticker for you use!**
 
 ## Women in Parliament Hex Sticker:
 
+Download [PNG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png) or 
+[SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_hex.svg).
+
 <img src="images/Women_in_Parliament_hex.svg" alt="Women in Parliament Hex Sticker" width="400">
-
-Download: [PNG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_hex.png) or 
-[SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_hex.svg)
-
 
 ### Bonus Image
 
-[![Women in Parliament Image](images/Women_in_Parliament_rect.svg)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png)
+Download [PNG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
+[SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_rect.svg).
+
+<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="400">
 
 ---
 
