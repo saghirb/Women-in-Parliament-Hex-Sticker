@@ -27,20 +27,22 @@ The raw data for *"Proportion of seats held by women in national parliaments"*
 
 + https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
-As part of its "open data" mission the World Bank kindly offers "free and open access to 
-global development data"_ licensed under the "Creative Commons Attribution 4.0 (CC-BY 4.0)".
+As part of its "open data" mission the World Bank kindly offers *"free and open access to 
+global development data"* licensed under the "Creative Commons Attribution 4.0 (CC-BY 4.0)".
 
 ### Source Data
 
 The data originates from the ["Inter-Parliamentary Union" (IPU)](https://www.ipu.org/)
-which provides an *_"Archive of statistical data on the percentage of women in 
-national parliaments"_* going back to 1997 on a monthly basis:
+which provides an *"Archive of statistical data on the percentage of women in 
+national parliaments"* going back to 1997 on a monthly basis:
 
 + http://archive.ipu.org/wmn-e/classif-arc.htm
 
 The World Bank data is for “single or lower parliamentary chambers only”, while 
 the IPU also presents data for “Upper Houses or Senates”. Moreover, the IPU provides 
 the actual numbers used to calculate the percentages (which the World Bank does not).
+The data has to be scraped from the IPU website (please check the `robots.txt` file
+first).
 
 ---
 
@@ -65,23 +67,23 @@ First download the latest`CSV` file from:
 
 + https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
-#### Using `data.table` Code
+#### Using `data.table`
 
 ```
 library(data.table)
 wipdt <- fread("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv",
-             skip = 4, header = TRUE, check.names=TRUE)
+               skip = 4, header = TRUE, check.names=TRUE)
 WP <- melt(wipdt,
-            id.vars = grep("Name|Code", names(wipdt), value = TRUE),
-            measure = patterns("^X"),
-            variable.name = "YearC",
-            value.name = c("pctWiP"),
-            na.rm = TRUE)
+           id.vars = grep("Name|Code", names(wipdt), value = TRUE),
+           measure = patterns("^X"),
+           variable.name = "YearC",
+           value.name = c("pctWiP"),
+           na.rm = TRUE)
 WP[, Year:=as.numeric(gsub("[^[:digit:].]", "",  YearC))][
    , YearC:=NULL]
 ```
 
-#### Using `tidyverse` Code
+#### Using `tidyverse`
 
 ```
 library(readr)
@@ -90,9 +92,9 @@ library(tidyr)
 wiptv <- read_csv("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv", skip = 4) 
 names(wiptv) <- make.names(names(wiptv))
 wipTidy <- wiptv %>% 
-  gather(key=YearC, value=pctWiP, starts_with("X"), na.rm=TRUE) %>% 
-  mutate(Year = parse_number(YearC)) %>% 
-  select(-YearC)
+    gather(key=YearC, value=pctWiP, starts_with("X"), na.rm=TRUE) %>% 
+    mutate(Year = parse_number(YearC)) %>% 
+    select(-YearC)
 ```
 
 ---
