@@ -1,9 +1,8 @@
 # Women in Parliament Hex Sticker (& Data)
 
-
-**Do you want a stimulating and motivating dataset to teach data wrangling and and data analysis using [R](https://r-project.org) ? Then the "Women in Parliament" data if for you. It will stimulate data driven analyses and discussions.**
-
-**We even created a hex sticker for you use!**
+**Use the "Women in Parliament" data teach data wrangling and data analysis in 
+[R](https://r-project.org). It will stimulate interesting data driven analyses 
+and discussions. It has a hex sticker too ;)**
 
 ## Women in Parliament Hex Sticker
 
@@ -24,10 +23,9 @@
 ## World Bank "Women in Parliament" Data
 
 The raw data for *"Proportion of seats held by women in national parliaments"* 
-includes the percentage of women in parliament (_"single or lower parliamentary chambers 
-only"_) by country (region) and year. It can be downloaded from:
+(_"single or lower parliamentary chambers only"_) by can be directly downloaded from:
 
-- https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
++ https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
 As part of its "open data" mission the World Bank kindly offers "free and open access to 
 global development data"_ licensed under the "Creative Commons Attribution 4.0 (CC-BY 4.0)".
@@ -38,33 +36,76 @@ The data originates from the ["Inter-Parliamentary Union" (IPU)](https://www.ipu
 which provides an *_"Archive of statistical data on the percentage of women in 
 national parliaments"_* going back to 1997 on a monthly basis:
 
-- http://archive.ipu.org/wmn-e/classif-arc.htm
++ http://archive.ipu.org/wmn-e/classif-arc.htm
 
 The World Bank data is for “single or lower parliamentary chambers only”, while 
 the IPU also presents data for “Upper Houses or Senates”. Moreover, the IPU provides 
 the actual numbers used to calculate the percentages (which the World Bank does not).
 
-## Using "Women in Parliament" Data with R
+---
 
-### Importing the Data
+## Importing the Data into R
 
+The data can be imported into R using the `wbstats` package or by reading in the CSV file
+available from the World Bank's website.
 
-#### R `wbstat` package
+### R `wbstat` package
 
-The [`wbstats`](https://cran.r-project.org/web/packages/wbstats/) R package
-
+The R package [`wbstats`](https://cran.r-project.org/web/packages/wbstats/) provides
+access to World Bank's indicator data. Use the following code to get the women in 
+parliament data:
 ```
 library(wbstats)
 WiP <- library(wbstats)
 ```
 
-#### `data.table`
+### Importing the Raw Data into R
 
+First download the latest`CSV` file from:
 
++ https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
-#### `tidyverse`
+#### Using `data.table` Code
 
+```
+library(data.table)
+wipdt <- fread("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv",
+             skip = 4, header = TRUE, check.names=TRUE)
+WP <- melt(wipdt,
+            id.vars = grep("Name|Code", names(wipdt), value = TRUE),
+            measure = patterns("^X"),
+            variable.name = "YearC",
+            value.name = c("pctWiP"),
+            na.rm = TRUE)
+WP[, Year:=as.numeric(gsub("[^[:digit:].]", "",  YearC))][
+   , YearC:=NULL]
+```
 
+#### Using `tidyverse` Code
+
+```
+library(readr)
+library(dplyr)
+library(tidyr)
+wiptv <- read_csv("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv", skip = 4) 
+names(wiptv) <- make.names(names(wiptv))
+wipTidy <- wiptv %>% 
+  gather(key=YearC, value=pctWiP, starts_with("X"), na.rm=TRUE) %>% 
+  mutate(Year = parse_number(YearC)) %>% 
+  select(-YearC)
+```
+
+---
+
+## R Guides Using Women in Parliament Data
+
+Use the following R guides to get ideas on how to teach using the women in parliament 
+data:
+
++ [Women in Parliament -- data.table Edition](https://github.com/saghirb/WiP-rdatatable/blob/master/doc/WiP-rdatatable.pdf)
+    + GitHub Repo: https://github.com/saghirb/WiP-rdatatable
++ [Women in Parliament – Tidyverse Edition](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)
+    + GitHub Repo: https://github.com/saghirb/WiP-tidyverse
 
 ---
 
