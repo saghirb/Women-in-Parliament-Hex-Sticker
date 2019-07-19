@@ -1,11 +1,11 @@
 # Women in Parliament Hex Sticker (& Data)
 
-**Use the World Bank's "Women in Parliament Data" to teach [R](https://r-project.org) 
-or any other data analysis software.**
+
+**Do you want a stimulating and motivating dataset to teach data wrangling and and data analysis using [R](https://r-project.org) ? Then the "Women in Parliament" data if for you. It will stimulate data driven analyses and discussions.**
 
 **We even created a hex sticker for you use!**
 
-## Women in Parliament Hex Sticker:
+## Women in Parliament Hex Sticker
 
 <img src="images/Women_in_Parliament_hex.svg" alt="Women in Parliament Hex Sticker" width="400"> 
 
@@ -29,18 +29,10 @@ only"_) by country (region) and year. It can be downloaded from:
 
 - https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
-As part of its "open data" mission the World Bank offers _"free and open access 
-to global development data"_ kindly licensed under the "Creative Commons Attribution 
-4.0 (CC-BY 4.0)".
+As part of its "open data" mission the World Bank kindly offers "free and open access to 
+global development data"_ licensed under the "Creative Commons Attribution 4.0 (CC-BY 4.0)".
 
-### R `wbstat` package
-
-The [`wbstats`](https://cran.r-project.org/web/packages/wbstats/) R package
-
-**WRITE MORE HERE**
-
-
-## Source Data
+### Source Data
 
 The data originates from the ["Inter-Parliamentary Union" (IPU)](https://www.ipu.org/)
 which provides an *_"Archive of statistical data on the percentage of women in 
@@ -51,6 +43,28 @@ national parliaments"_* going back to 1997 on a monthly basis:
 The World Bank data is for “single or lower parliamentary chambers only”, while 
 the IPU also presents data for “Upper Houses or Senates”. Moreover, the IPU provides 
 the actual numbers used to calculate the percentages (which the World Bank does not).
+
+## Using "Women in Parliament" Data with R
+
+### Importing the Data
+
+
+#### R `wbstat` package
+
+The [`wbstats`](https://cran.r-project.org/web/packages/wbstats/) R package
+
+```
+library(wbstats)
+WiP <- library(wbstats)
+```
+
+#### `data.table`
+
+
+
+#### `tidyverse`
+
+
 
 ---
 
