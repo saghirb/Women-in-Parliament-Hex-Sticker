@@ -68,7 +68,7 @@ First download the latest `CSV` file from:
 + https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
 
 Below I will refer to this file as "`WiP-Data.csv`" but please use the actual
-filename that you save it as.
+file name that you save it as.
 
 #### Using `data.table`
 
