@@ -1,4 +1,4 @@
-# Women in Parliament Hex Sticker (& Data)
+# Women in Parliament Hex Sticker & Data
 
 **Use the "Women in Parliament" data teach data wrangling and data analysis in 
 [R](https://r-project.org). It will stimulate interesting data driven analyses 
