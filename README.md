@@ -63,15 +63,18 @@ WiP <- library(wbstats)
 
 ### Importing the Raw Data into R
 
-First download the latest`CSV` file from:
+First download the latest `CSV` file from:
 
 + https://data.worldbank.org/indicator/SG.GEN.PARL.ZS 
+
+Below I will refer to this file as "`WiP-Data.csv`" but please use the actual
+filename that you save it as.
 
 #### Using `data.table`
 
 ```
 library(data.table)
-wipdt <- fread("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv",
+wipdt <- fread("WiP-Data.csv",
                skip = 4, header = TRUE, check.names=TRUE)
 WP <- melt(wipdt,
            id.vars = grep("Name|Code", names(wipdt), value = TRUE),
@@ -89,7 +92,7 @@ WP[, Year:=as.numeric(gsub("[^[:digit:].]", "",  YearC))][
 library(readr)
 library(dplyr)
 library(tidyr)
-wiptv <- read_csv("API_SG.GEN.PARL.ZS_DS2_en_csv_v2_10515251.csv", skip = 4) 
+wiptv <- read_csv("WiP-Data.csv", skip = 4) 
 names(wiptv) <- make.names(names(wiptv))
 wipTidy <- wiptv %>% 
     gather(key=YearC, value=pctWiP, starts_with("X"), na.rm=TRUE) %>% 
