@@ -1,8 +1,10 @@
 # Women in Parliament Hex Sticker & Data
 
-**Use the "Women in Parliament" data teach data wrangling and data analysis in 
-[R](https://r-project.org). It will stimulate interesting data driven analyses 
-and discussions. It has a hex sticker too ;)**
+**Are you bored with using the [R](https://r-project.org) iris, mtcars,
+... datasets?**
+
+**Then use the "Women in Parliament" data from the World Bank instead!. Great for
+teaching, learning, presentations or reprex. It has a hex sticker too!**
 
 ## Women in Parliament Hex Sticker
 
@@ -13,7 +15,7 @@ and discussions. It has a hex sticker too ;)**
 
 ### Bonus Image
 
-<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Hex Sticker" height="400"> 
+<img src="images/Women_in_Parliament_rect.svg" alt="Women in Parliament Bonus Image" height="400"> 
 
 **Download:** [PNG (3508x2480)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
 [SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_rect.svg).
