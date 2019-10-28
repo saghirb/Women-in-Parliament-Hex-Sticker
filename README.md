@@ -60,7 +60,7 @@ access to World Bank's indicator data. Use the following code to get the women i
 parliament data:
 ```
 library(wbstats)
-WiP <- library(wbstats)
+wip <- wb(indicator = "SG.GEN.PARL.ZS") 
 ```
 
 ### Importing the Raw Data into R
