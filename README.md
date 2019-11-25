@@ -20,6 +20,12 @@ teaching, learning, presentations or reprex. It has a hex sticker too!**
 **Download:** [PNG (3508x2480)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women_in_Parliament_rect.png) or 
 [SVG](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/blob/master/images/Women_in_Parliament_rect.svg).
 
+### Wide Hex 1280x640 (e.g. image for GitHub Repositories)
+
+<img src="images/Women-in-Parliament_wide-hex-1280x640.png" alt="Women in Parliament Bonus Image" height="400"> 
+
+**Download:** [PNG (1280x640)](https://github.com/saghirb/Women-in-Parliament-Hex-Sticker/raw/master/images/Women-in-Parliament_wide-hex-1280x640.png)
+
 ---
 
 ## World Bank "Women in Parliament" Data
