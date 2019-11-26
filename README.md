@@ -69,6 +69,16 @@ library(wbstats)
 wip <- wb(indicator = "SG.GEN.PARL.ZS") 
 ```
 
+### R `WDI` package
+
+The R package [`WDI`](https://cran.r-project.org/web/packages/WDI/) also provides
+access to World Bank's indicator data. Use the following code to get the women in 
+parliament data:
+```
+library(WDI)
+wip <- WDI(indicator = "SG.GEN.PARL.ZS") 
+```
+
 ### Importing the Raw Data into R
 
 First download the latest `CSV` file from:
