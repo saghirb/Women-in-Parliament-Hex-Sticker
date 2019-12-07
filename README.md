@@ -125,8 +125,6 @@ wipTidy <- wiptv %>%
 Use the following R guides to get ideas on how to teach using the women in parliament 
 data:
 
-<br> 
-
 + [**Women in Parliament -- data.table Edition**  (PDF)](https://github.com/saghirb/WiP-rdatatable/raw/master/doc/WiP-rdatatable.pdf)
     + GitHub Repo: https://github.com/saghirb/WiP-rdatatable
 
@@ -146,8 +144,6 @@ data:
 <br>
 
 ---
-
-<br>
 
 ## Acknowledgements
 
